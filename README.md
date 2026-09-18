@@ -15,10 +15,22 @@ npm run build      # genera dist/
 npm run preview -- --host   # sirve dist/ en tu red local (para probar en el celular)
 ```
 
+## Publicada
+
+https://victorvargasc.github.io/cocteles/
+
+Se sirve con GitHub Pages desde la rama `gh-pages`. Para publicar cambios:
+
+```bash
+npm run deploy
+```
+
+(compila y sube `dist/`; el sitio se actualiza en un par de minutos).
+
 ## Instalar en Android
 
-1. Publica la carpeta `dist/` en un hosting estático con HTTPS (Netlify, Vercel, GitHub Pages…).
-2. Abre la URL en Chrome del celular → menú ⋮ → **Instalar app**.
+Abre la URL en Chrome del celular → menú ⋮ → **Instalar app** (o "Añadir a pantalla de inicio").
+Después funciona sin internet.
 
 ## Agregar cócteles
 
