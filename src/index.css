@@ -61,6 +61,12 @@ body,
   height: 100%;
 }
 
+html {
+  /* Bloquea el pellizco para hacer zoom y el desplazamiento lateral; deja el scroll vertical. */
+  touch-action: pan-y;
+  overscroll-behavior: none;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -69,6 +75,9 @@ body {
   font-size: 16px;
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
+  /* Evita el zoom al tocar dos veces */
+  touch-action: pan-y;
+  overscroll-behavior: none;
 }
 
 a {
